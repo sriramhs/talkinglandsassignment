@@ -14,23 +14,6 @@ Run the development server:
 npm run dev
 
 
-
-📂 Project Structure
-csharp
-Copy code
-.
-├── src/
-│   ├── assets/       # Static assets (images, icons, etc.)
-│   ├── components/   # Reusable React components
-│   ├── App.tsx       # Main app component
-│   ├── main.tsx      # App entry point
-│   └── index.css     # Global styles
-├── public/           # Public static files
-├── tsconfig.json     # TypeScript configuration
-├── vite.config.ts    # Vite configuration
-└── package.json
-
-
 🛠️ Tech Stack
 ⚛️ React 18
 🟦 TypeScript
