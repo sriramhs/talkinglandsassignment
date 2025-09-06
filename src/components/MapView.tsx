@@ -38,18 +38,21 @@ export default function MapView({ onFeatureSelect,view }: Props) {
   const [loading, setLoading] = useState(true);
   const center = useMemo(() => ({ lat: 37.7785, lng: -122.4194 }), []);
 
-  useEffect(() => {
-    let mounted = true;
-    fetchSpatialData().then((res: any) => {
-      if (mounted) {
-        setData(res);
-        setLoading(false);
-      }
-    });
-    return () => {
-      mounted = false;
-    };
-  }, []);
+ useEffect(() => {
+  const loadData = async () => {
+    try {
+      const res = await fetchSpatialData();
+      setData(res);
+    } catch (err) {
+      console.error("Error fetching spatial data:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  loadData();
+}, []);
+
 
   if (loading || !data) {
     return (
