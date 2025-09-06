@@ -8,19 +8,11 @@ It also comes with **Hot Module Replacement (HMR)** and some basic **ESLint rule
 ## 🚀 Project Setup
 
 Clone the repository and install dependencies:
-
 npm install
+
 Run the development server:
-
-bash
-Copy code
 npm run dev
-Build for production:
 
-bash
-Copy code
-npm run build
-Preview the production build:
 
 bash
 Copy code
@@ -46,7 +38,7 @@ Copy code
 
 ⚡ Vite
 
-🎨 Tailwind CSS (if you added it)
+🎨 Tailwind CSS 
 
 ✅ ESLint for linting
 
@@ -68,11 +60,4 @@ npm run lint – Run ESLint on project files
 
 📏 Code linting with ESLint
 
-🎉 Minimal setup, easy to extend
 
-📌 Notes
-Update ESLint rules in .eslintrc.cjs as per your project needs.
-
-Add environment variables in .env for different setups (.env.development, .env.production).
-
-Ready to integrate libraries like React Router, TanStack Query, or TailwindCSS.
