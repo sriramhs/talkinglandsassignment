@@ -14,9 +14,7 @@ Run the development server:
 npm run dev
 
 
-bash
-Copy code
-npm run preview
+
 📂 Project Structure
 csharp
 Copy code
@@ -31,15 +29,13 @@ Copy code
 ├── tsconfig.json     # TypeScript configuration
 ├── vite.config.ts    # Vite configuration
 └── package.json
+
+
 🛠️ Tech Stack
 ⚛️ React 18
-
 🟦 TypeScript
-
 ⚡ Vite
-
 🎨 Tailwind CSS 
-
 ✅ ESLint for linting
 
 📖 Scripts
