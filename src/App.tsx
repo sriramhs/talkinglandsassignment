@@ -11,8 +11,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-800 ">
       <Header setView={setView} view={view} />
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 ">
-        <div className="md:col-span-4 p-6">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 ">
+        <div className="lg:col-span-4 p-6">
           <MapView
             onFeatureSelect={(f) => {
               console.log(f);
@@ -22,8 +22,8 @@ export default function App() {
           />
         </div>
 
-        <aside>
-          <div className="mb-4">
+        <aside className="p-4 lg:p-0">
+          <div className="mb-4 ">
             <h2 className="text-lg font-medium">Feature Info</h2>
             <p className="text-sm text-gray-500">
               Click a marker, polygon or the map to see details
